@@ -1,4 +1,6 @@
+""" Generates random number """
 import random
+import os
 
 board = [' ']*9
 user_selection = []
@@ -9,16 +11,10 @@ WIN_COMBINATIONS = [[1, 2, 3], [4, 5, 6], [7, 8, 9],
                     [1, 5, 9], [3, 5, 7]]
 
 
-def display_board(board):
+def display_board():
     """
     Displays the board.
-
-    Parameters:
-    -----------
-    board : list of int
-        List of numbers from 0 to 8.
     """
-
     print(board[0] + '|' + board[1] + '|' + board[2])
     print('-+-+-')
     print(board[3] + '|' + board[4] + '|' + board[5])
@@ -27,25 +23,32 @@ def display_board(board):
 
 
 def run_game():
+    """
+    This is a function that runs the game until the board is full.
 
-    while not is_board_full():        
-        display_board(board)
-        try:        
+    Gets user and computer input and checks if it is a valid and if not
+    displays error messages.
+
+    After each move calls for check win and check tie function.
+    """
+    while not is_board_full():
+        display_board()
+        try:
             user_input = input("\nPlease enter a number (1-9): ")
             if user_input.isnumeric() is False:
                 print("\nInput must be a number between 1 and 9.\n")
                 continue
-        
-            user_input = int(user_input) 
+
+            user_input = int(user_input)
 
             if user_input_between_one_and_nine(user_input) is False:
                 print("\nYour input number is not between 1 and 9.\n")
-                continue           
-        
+                continue
+
             if is_cell_empty(board[user_input - 1]) is False:
                 print("\nThis place is already taken. Choose another spot.\n")
                 continue
-            
+
             board[user_input - 1] = 'X'
             user_selection.append(user_input)
             if check_game():
@@ -54,10 +57,12 @@ def run_game():
             computer_selection.append(computer_input)
             if check_game():
                 break
+            # Clears the console
+            os.system('cls' if os.name == 'nt' else 'clear')
         except ValueError:
             print("\nInvalid input. Please try again\n")
     print("Thank you for playing!\n")
-    display_board(board)
+    display_board()
 
 
 def is_board_full():
@@ -78,7 +83,7 @@ def user_input_between_one_and_nine(user_input):
     -----------
     user_input : int
         User input from 1 to 9.
-    """    
+    """
     if 1 <= user_input <= 9:
         return True
     return False
@@ -89,7 +94,7 @@ def is_cell_empty(board_location):
     Returns an empty string if cell in the board is empty.
 
     Parameters:
-    -----------   
+    -----------
     board_location : string
         The string which gets returned.
     """
