@@ -48,11 +48,11 @@ def run_game():
             
             board[user_input - 1] = 'X'
             user_selection.append(user_input)
-            if check_win():
+            if check_game():
                 break
             computer_input = generate_computer_input()
             computer_selection.append(computer_input)
-            if check_win():
+            if check_game():
                 break
         except ValueError:
             print("\nInvalid input. Please try again\n")
@@ -127,10 +127,28 @@ def check_win():
         print("\n*** Game over ***\n")
         print("Your opponent beat you!\n")
         return True
-    elif any([set(w).issubset(set(user_selection)) for w in WIN_COMBINATIONS]):
+    if any([set(w).issubset(set(user_selection)) for w in WIN_COMBINATIONS]):
         print("\n*** Congratulations ***\n")
         print("You are the WINNER!\n")
         return True
+    return False
+
+
+def check_tie():
+    """
+    Returns True if it'a tie.
+    """
+    if is_board_full() and not check_win():
+        print("\nGame over!It'a tie!\n")
+        return True
+    return False
+
+
+def check_game():
+    """
+    Return true if user or computer win the game or if it's a tie.
+    """
+    return check_win() or check_tie()
 
 
 run_game()
