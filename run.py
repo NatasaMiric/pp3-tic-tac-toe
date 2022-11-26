@@ -24,23 +24,28 @@ def run_game():
 
     while not is_board_full():        
         display_board(board)
-                
-        user_input = input("\nPlease enter a number (1-9): ")
-        if user_input.isnumeric() is False:
-            print("\nInput must be a number between 1 and 9.\n")
-            continue
+        try:        
+            user_input = input("\nPlease enter a number (1-9): ")
+            if user_input.isnumeric() is False:
+                print("\nInput must be a number between 1 and 9.\n")
+                continue
         
-        user_input = int(user_input) 
+            user_input = int(user_input) 
 
-        if user_input_between_one_and_nine(user_input) is False:
-            print("\nYour input number is not between 1 and 9.\n")
-            continue           
+            if user_input_between_one_and_nine(user_input) is False:
+                print("\nYour input number is not between 1 and 9.\n")
+                continue           
         
-        if is_cell_empty(board[user_input - 1]) is False:
-            print("\nThis place is already taken. Choose another spot.\n")
-            continue
-        board[user_input - 1] = 'X'
-        computer_input = generate_computer_input()
+            if is_cell_empty(board[user_input - 1]) is False:
+                print("\nThis place is already taken. Choose another spot.\n")
+                continue
+            
+            board[user_input - 1] = 'X'
+            computer_input = generate_computer_input()
+        except ValueError:
+            print("\nInvalid input. Please try again\n")
+    print("Thank you for playing!\n")
+    display_board(board)
 
 
 def is_board_full():
