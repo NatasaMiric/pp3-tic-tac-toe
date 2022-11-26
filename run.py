@@ -57,8 +57,7 @@ def run_game():
             computer_selection.append(computer_input)
             if check_game():
                 break
-            # Clears the console
-            os.system('cls' if os.name == 'nt' else 'clear')
+            clear_screen()
         except ValueError:
             print("\nInvalid input. Please try again\n")
     print("Thank you for playing!\n")
@@ -176,6 +175,13 @@ def display_instructions():
         "\n1 | 2 | 3\n4 | 5 | 6\n7 | 8 | 9\n"
     )
     print("------------------------------------------------------------")
+
+
+def clear_screen():
+    """
+    Clears the console.
+    """
+    return os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def main():
