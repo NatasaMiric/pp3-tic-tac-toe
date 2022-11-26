@@ -178,5 +178,28 @@ def display_instructions():
     print("------------------------------------------------------------")
 
 
-display_instructions()
-run_game()
+def main():
+    """
+    Main function that executes the program.
+    """
+    print("----------------------------")
+    print("Welcome to Tic Tac Toe Game!")
+    print("----------------------------")
+    print("What's you name?")
+    name = ''
+    while True:
+        name = input()
+        if name.isalpha():
+            break
+        print("Please use the letters to input your name!")
+    print("----------------------------")
+    print('')
+    print(f"Welcome {name}!")
+    print("Let's play!")
+    display_instructions()
+    run_game()
+
+
+if __name__ == '__main__':
+    main()
+
