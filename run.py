@@ -156,4 +156,27 @@ def check_game():
     return check_win() or check_tie()
 
 
+def display_instructions():
+    """
+    Displays the game instructions.
+    """
+    print(
+        "\nRULES:\n"
+        "\nPlayer 1 and player 2, represented by X and O, take turns "
+        "marking the spaces on a 3*3 board.\n"
+        "The player who succeeds in placing "
+        "three of their marks in a horizontal, "
+        "vertical, or diagonal row wins.\n"
+
+        "Make your move by entering a number 1-9"
+        " to the available spot.\n"
+        "You have the X symbol assigned to you to play,"
+        " while the computer has the symbol O."
+        " The number will correspond to the board position as illustrated:\n"
+        "\n1 | 2 | 3\n4 | 5 | 6\n7 | 8 | 9\n"
+    )
+    print("------------------------------------------------------------")
+
+
+display_instructions()
 run_game()
