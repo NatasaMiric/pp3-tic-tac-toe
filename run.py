@@ -1,6 +1,12 @@
 import random
 
 board = [' ']*9
+user_selection = []
+computer_selection = []
+
+WIN_COMBINATIONS = [[1, 2, 3], [4, 5, 6], [7, 8, 9],
+                    [1, 4, 7], [2, 5, 8], [3, 6, 9],
+                    [1, 5, 9], [3, 5, 7]]
 
 
 def display_board(board):
@@ -41,7 +47,13 @@ def run_game():
                 continue
             
             board[user_input - 1] = 'X'
+            user_selection.append(user_input)
+            if check_win():
+                break
             computer_input = generate_computer_input()
+            computer_selection.append(computer_input)
+            if check_win():
+                break
         except ValueError:
             print("\nInvalid input. Please try again\n")
     print("Thank you for playing!\n")
@@ -102,6 +114,23 @@ def generate_computer_input():
         else:
             computer_input = generate_computer_input()
     return computer_input
+
+
+def check_win():
+    """
+    Returns True if the player wins the game.
+    """
+    computer_selection.sort()
+    user_selection.sort()
+    if any([set(w).issubset(set(computer_selection))
+           for w in WIN_COMBINATIONS]):
+        print("\n*** Game over ***\n")
+        print("Your opponent beat you!\n")
+        return True
+    elif any([set(w).issubset(set(user_selection)) for w in WIN_COMBINATIONS]):
+        print("\n*** Congratulations ***\n")
+        print("You are the WINNER!\n")
+        return True
 
 
 run_game()
