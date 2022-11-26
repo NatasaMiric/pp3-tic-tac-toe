@@ -20,10 +20,15 @@ def display_board(board):
 
 def run_game():
 
-    while not is_board_full():
-        display_board(board)        
+    while not is_board_full():        
+        display_board(board)
+                
         user_input = input("\nPlease enter a number (1-9): ")
-        user_input = int(user_input)
+        if user_input.isnumeric() is False:
+            print("\nInput must be a number between 1 and 9\n")
+            continue
+        
+        user_input = int(user_input)            
         board[user_input - 1] = 'X'
 
 
@@ -37,4 +42,4 @@ def is_board_full():
     return True
 
 
-run_game()    
+run_game()
