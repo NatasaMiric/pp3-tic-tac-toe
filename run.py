@@ -25,13 +25,18 @@ def run_game():
                 
         user_input = input("\nPlease enter a number (1-9): ")
         if user_input.isnumeric() is False:
-            print("\nInput must be a number between 1 and 9\n")
+            print("\nInput must be a number between 1 and 9.\n")
             continue
         
         user_input = int(user_input) 
+
         if user_input_between_one_and_nine(user_input) is False:
             print("\nYour input number is not between 1 and 9.\n")
             continue           
+        
+        if is_cell_empty(board[user_input - 1]) is False:
+            print("\nThis place is already taken. Choose another spot.\n")
+            continue
         board[user_input - 1] = 'X'
 
 
@@ -57,6 +62,18 @@ def user_input_between_one_and_nine(user_input):
     if 1 <= user_input <= 9:
         return True
     return False
+
+
+def is_cell_empty(board_location):
+    """
+    Returns an empty string if cell in the board is empty.
+
+    Parameters:
+    -----------   
+    board_location : string
+        The string which gets returned.
+    """
+    return board_location == ' '
 
 
 run_game()
