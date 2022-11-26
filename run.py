@@ -28,7 +28,10 @@ def run_game():
             print("\nInput must be a number between 1 and 9\n")
             continue
         
-        user_input = int(user_input)            
+        user_input = int(user_input) 
+        if user_input_between_one_and_nine(user_input) is False:
+            print("\nYour input number is not between 1 and 9.\n")
+            continue           
         board[user_input - 1] = 'X'
 
 
@@ -40,6 +43,20 @@ def is_board_full():
         if value == ' ':
             return False
     return True
+
+
+def user_input_between_one_and_nine(user_input):
+    """
+    Returns True if user inputs a valid number.
+
+    Parameters:
+    -----------
+    user_input : int
+        User input from 1 to 9.
+    """    
+    if 1 <= user_input <= 9:
+        return True
+    return False
 
 
 run_game()
