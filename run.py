@@ -1,3 +1,5 @@
+import random
+
 board = [' ']*9
 
 
@@ -38,6 +40,7 @@ def run_game():
             print("\nThis place is already taken. Choose another spot.\n")
             continue
         board[user_input - 1] = 'X'
+        computer_input = generate_computer_input()
 
 
 def is_board_full():
@@ -74,6 +77,26 @@ def is_cell_empty(board_location):
         The string which gets returned.
     """
     return board_location == ' '
+
+
+def generate_computer_input():
+    """
+    Generate and return a random number.
+
+    The value is between 1 and 9.
+
+    Returns:
+    --------
+    computer_input : int
+        Random number generated.
+    """
+    computer_input = random.randint(1, 9)
+    if not is_board_full():
+        if not board[int(computer_input - 1)] in {'X', 'O'}:
+            board[computer_input - 1] = 'O'
+        else:
+            computer_input = generate_computer_input()
+    return computer_input
 
 
 run_game()
