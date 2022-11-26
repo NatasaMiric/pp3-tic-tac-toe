@@ -18,4 +18,23 @@ def display_board(board):
     print(board[6] + '|' + board[7] + '|' + board[8])
 
 
-display_board(board)
+def run_game():
+
+    while not is_board_full():
+        display_board(board)        
+        user_input = input("\nPlease enter a number (1-9): ")
+        user_input = int(user_input)
+        board[user_input - 1] = 'X'
+
+
+def is_board_full():
+    """
+    Checks if the board has empty cells and returns True, otherwise False.
+    """
+    for value in board:
+        if value == ' ':
+            return False
+    return True
+
+
+run_game()    
