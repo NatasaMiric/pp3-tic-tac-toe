@@ -127,5 +127,8 @@ The game was deployed on Heroku. The following steps were used to deploy the gam
 
 
 ## Credits
-### Code Used
-### Content
+
+* Code Institute for the deployment terminal.
+* Wikipedia for the details of the Tic-Tac-Toe game. 
+* [Stack Overflow](https://stackoverflow.com/questions/33203038/nested-loops-in-nested-lists) for finding the solution on how to check the winning condition in the game .
+* [YouTube video](https://www.youtube.com/watch?v=dK6gJw4-NCo&t=1245s) for inspiration and ideas on how to implement the game. 
