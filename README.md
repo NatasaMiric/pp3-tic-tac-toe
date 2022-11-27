@@ -53,6 +53,20 @@ The winner is the first player who gets his three marks ('X' or 'O') on vertical
 
 ## Features
 ### Existing features
+
+**Displays the game board**
+
+**Accepts user input**
+
+**Play against the computer**
+
+**Generates random computer input**
+
+**Input validation and error-checking**
+  * You must enter the numbers
+  * You cannot enter the numbers less than 1 and greater than 9
+  * You cannot choose already occupied square 
+
 ### Future Features
 
 ## Technologies Used
