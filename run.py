@@ -32,9 +32,10 @@ def run_game():
     After each move calls for check win and check tie function.
     """
     while not is_board_full():
-        display_board()
+        print("\nPlease enter a number (1-9): \n")
+        display_board()        
         try:
-            user_input = input("\nPlease enter a number (1-9): \n")
+            user_input = input()
             if user_input.isnumeric() is False:
                 print("\nInput must be a number between 1 and 9.\n")
                 continue
@@ -60,9 +61,9 @@ def run_game():
             clear_screen()
         except ValueError:
             print("\nInvalid input. Please try again\n")
-    display_board()
+    display_board()    
     print("\nThank you for playing!\n")
-    
+
 
 def is_board_full():
     """
@@ -160,7 +161,7 @@ def display_instructions():
     Displays the game instructions.
     """
     print(
-        "\nRULES:\n"
+        "\nGAME RULES:\n"
         "\nPlayer 1 and player 2, represented by X and O, take turns "
         "marking the spaces on a 3*3 board.\n"
         "The player who succeeds in placing "
@@ -168,7 +169,7 @@ def display_instructions():
         "vertical, or diagonal row wins.\n"
 
         "Make your move by entering a number 1-9"
-        " to the available spot.\n"
+        " to the available square.\n"
         "You have the X symbol assigned to you to play,"
         " while the computer has the symbol O."
         " The number will correspond to the board position as illustrated:\n"
@@ -191,17 +192,16 @@ def main():
     print("----------------------------")
     print("WELCOME TO TIC-TAC-TOE!")
     print("----------------------------")
-    print("What's you name?")
+    print("Enter your name?")
     name = ''
     while True:
         name = input()
         if name.isalpha():
             break
         print("Please use the letters to input your name!")
-    print("----------------------------")
-    print('')
+    print("\n")
     print(f"Welcome {name}!")
-    print("Let's play!")
+    print("\nLet's play!")
     display_instructions()
     run_game()
 
