@@ -8,7 +8,7 @@ Users are playing against the computer by selecting one of the nine squares on t
 
 # How to play
 
-Tic Tac Toe is based on the classic pen and papper game and requeres a good logical thinking. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). 
+Tic Tac Toe is based on the classic pen and papper game that requieres logical thinking. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). 
 
 In this version, the player is represented with the 'X' sign and computer with 'O'.
 
@@ -18,7 +18,7 @@ After each round, user is able to see his and computers choice on the board.
 
 The winner is the first player who gets his three marks ('X' or 'O') on vertical, horizontal or diagonal row.    
 
-## Contents
+## Table of Content
 
 * [Flowchart](#Flowchart)
 
@@ -46,6 +46,10 @@ The winner is the first player who gets his three marks ('X' or 'O') on vertical
 ## Flowchart
 
 ## User Stories
+
+ * As a visiting user, I would like to be able to play the game against an opponent.
+ * As a visiting user, I would like to be able to see my and computers choice on the board.
+ * As a visiting user, I would like to be able to restart the game. 
 
 ## Features
 ### Existing features
