@@ -29,8 +29,8 @@ The winner is the first player who gets his three marks ('X' or 'O') on vertical
   * [Future Features](#future-features)
   
 * [Technologies Used](#Technologies-Used)
-  * [Languages Used](#Languages-Used)
-  * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used) 
+  * [Languages & Libraries](#Languages-&-Libraries)
+  * [Programs](#Programs) 
 
 * [Testing](#Testing)
   * [Validator Testing](#validator-testing) 
@@ -69,9 +69,33 @@ The winner is the first player who gets his three marks ('X' or 'O') on vertical
 
 ### Future Features
 
+* Allow player to choose his symbol for playing.
+* Randomly choose which player is going first.
+* Keep track of the score in the score board.
+
 ## Technologies Used
-### Languages Used
-### Programs Used
+
+### Languages & Libraries
+
+Python - for building the game. 
+JavaScript - generated from the python essential template build by Code Institute.
+HTML - generated from the python essential template build by Code Institute.
+
+The following Python libraries were used:
+  * random
+  * os
+
+  ### Programs
+
+GitHub- was used to store the project.
+
+Git - was used for version control.
+
+Visual Studio - was used as a local IDE.
+
+Heroku - was used to deploy the app.
+
+[Lucid Chart](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=branded_sitelink_en_lucidchart&km_CPC_CampaignId=1490375427&km_CPC_AdGroupID=55688909257&km_CPC_Keyword=lucid%20chart&km_CPC_MatchType=e&km_CPC_ExtensionID=21193716975&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433236001&km_CPC_TargetID=kwd-55720648523&km_CPC_Country=1012212&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQiAsoycBhC6ARIsAPPbeLsu4EhgeL7oc8f5b4Q0lNfOeEAW1uvF-pLQ2OGzaXgm9ZB7HkvQCDUaAoXdEALw_wcB) - was used for creating and designing the flowchart of the project.
 
 ## Testing
 ### Validator Testing
