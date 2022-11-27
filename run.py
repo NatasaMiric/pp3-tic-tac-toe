@@ -34,7 +34,7 @@ def run_game():
     while not is_board_full():
         display_board()
         try:
-            user_input = input("\nPlease enter a number (1-9): ")
+            user_input = input("\nPlease enter a number (1-9): \n")
             if user_input.isnumeric() is False:
                 print("\nInput must be a number between 1 and 9.\n")
                 continue
@@ -60,9 +60,9 @@ def run_game():
             clear_screen()
         except ValueError:
             print("\nInvalid input. Please try again\n")
-    print("Thank you for playing!\n")
     display_board()
-
+    print("\nThank you for playing!\n")
+    
 
 def is_board_full():
     """
@@ -189,7 +189,7 @@ def main():
     Main function that executes the program.
     """
     print("----------------------------")
-    print("Welcome to Tic Tac Toe Game!")
+    print("WELCOME TO TIC-TAC-TOE!")
     print("----------------------------")
     print("What's you name?")
     name = ''
