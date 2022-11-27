@@ -54,6 +54,10 @@ The winner is the first player who gets his three marks ('X' or 'O') on vertical
 ## Features
 ### Existing features
 
+**Displays the welcome message and asks user to input the name**
+
+**Displays the rules of the game**
+
 **Displays the game board**
 
 **Accepts user input**
