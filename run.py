@@ -125,6 +125,8 @@ def check_win():
     """
     Returns True if the player wins the game.
     """
+    # Solution from stackoverflow
+    # https://stackoverflow.com/questions/33203038/nested-loops-in-nested-lists
     if any([set(w).issubset(set(COMPUTER_SELECTION))
            for w in WIN_COMBINATIONS]):
         print("\n*** Game over ***\n")
@@ -152,6 +154,39 @@ def check_if_game_over():
     Return true if user or computer win the game or if it's a tie.
     """
     return check_win() or check_tie()
+
+
+def init():
+    """
+    Resets global variables for restarting the game.
+    """
+    global BOARD
+    global USER_SELECTION
+    global COMPUTER_SELECTION
+    USER_SELECTION = []
+    COMPUTER_SELECTION = []
+    BOARD = [' ']*9
+
+
+def restart_game():
+    """
+    Restarts the game.
+    """
+    while True:
+        print("\nWould you like to play again?")
+        print("\nEnter 'y' for YES or 'n' for NO:")
+        user_choice = input().strip().lower()
+        if user_choice == 'y':
+            clear_screen()
+            init()
+            run_game()
+        elif user_choice == 'n':
+            clear_screen()
+            print("\n")
+            print("Thank you for playing!\n")
+            break
+        else:
+            print("Invalid answer. Press 'y' to start and 'n' to quit.")
 
 
 def display_instructions():
@@ -202,6 +237,7 @@ def main():
     print("\nLet's play!")
     display_instructions()
     run_game()
+    restart_game()
 
 
 if __name__ == '__main__':
