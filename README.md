@@ -76,6 +76,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 * Allow the player to choose his symbol for playing.
 * Randomly choose which player is going first.
 * Keep track of the score on the scoreboard.
+* Implement different levels of game difficulty: easy, medium and hard.
 
 ## Technologies Used
 
@@ -86,8 +87,8 @@ JavaScript - generated from the python essential template built by Code Institut
 HTML - generated from the python essential template built by Code Institute.
 
 The following Python libraries were used:
-  * random
-  * os
+  * random -  to randomize the choices for the computer,
+  * os -  to eliminate previous code on the terminal window making it clutter free and improves UX.
 
   ### Programs
 
