@@ -33,7 +33,7 @@ def run_game():
     """
     while not is_board_full():
         print("\nPlease enter a number (1-9): \n")
-        display_board()        
+        display_board()
         try:
             user_input = input()
             if user_input.isnumeric() is False:
@@ -61,7 +61,7 @@ def run_game():
             clear_screen()
         except ValueError:
             print("\nInvalid input. Please try again\n")
-    display_board()    
+    display_board()
     print("\nThank you for playing!\n")
 
 
@@ -125,8 +125,6 @@ def check_win():
     """
     Returns True if the player wins the game.
     """
-    computer_selection.sort()
-    user_selection.sort()
     if any([set(w).issubset(set(computer_selection))
            for w in WIN_COMBINATIONS]):
         print("\n*** Game over ***\n")
@@ -192,7 +190,7 @@ def main():
     print("----------------------------")
     print("WELCOME TO TIC-TAC-TOE!")
     print("----------------------------")
-    print("Enter your name?")
+    print("Enter your name:")
     name = ''
     while True:
         name = input()
@@ -208,4 +206,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
