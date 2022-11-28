@@ -29,7 +29,7 @@ def run_game():
     Gets user and computer input and checks if it is a valid and if not
     displays error messages.
 
-    After each move calls for check win and check tie function.
+    After each move checks if player wins or is it a tie.
     """
     while not is_board_full():
         print("\nPlease enter a number (1-9): \n")
@@ -52,11 +52,11 @@ def run_game():
 
             board[user_input - 1] = 'X'
             user_selection.append(user_input)
-            if check_game():
+            if check_if_game_over():
                 break
             computer_input = generate_computer_input()
             computer_selection.append(computer_input)
-            if check_game():
+            if check_if_game_over():
                 break
             clear_screen()
         except ValueError:
@@ -147,7 +147,7 @@ def check_tie():
     return False
 
 
-def check_game():
+def check_if_game_over():
     """
     Return true if user or computer win the game or if it's a tie.
     """
