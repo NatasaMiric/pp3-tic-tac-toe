@@ -108,6 +108,13 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
   * It is prompt whether the user wants to play again. The user can choose 'yes' or 'no'. 
   If he chooses 'yes', the new board shows on the screen on which he can make new moves. In case the user chooses 'no', the program exits from the game.     
 
+![](docs/screenshots/restart.png)
+
+**Exit from game**
+
+  * When the user chooses not to play again, the 'thank you' message displays and exits from the game. 
+
+  ![](docs/screenshots/exit.png)
 
 ### Future Features
 
