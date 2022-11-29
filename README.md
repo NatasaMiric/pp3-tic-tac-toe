@@ -39,9 +39,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
  * [Deployment](#Deployment)
 
 * [Credits](#Credits)
-  * [Code Used](#Code-Used)
-  * [Content](#Content)
-  
+    
 ------
 ## Flowchart
 
@@ -127,13 +125,17 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
 ### Languages & Libraries
 
-Python - for building the game. 
+Python - for building the game.
+
 JavaScript - generated from the python essential template built by Code Institute.
+
 HTML - generated from the python essential template built by Code Institute.
 
 The following Python libraries were used:
-  * random -  to randomize the choices for the computer,
-  * os -  to eliminate previous code on the terminal window making it clutter free and to improve UX.
+
+  * random -  to randomize the choices for the computer
+
+  * os -  to eliminate previous code on the terminal window making it clutter free and to improve UX
 
   ### Programs
 
@@ -149,6 +151,13 @@ Heroku - was used to deploy the app.
 
 ## Testing
 ### Validator Testing
+
+* [CI Python Linter](https://pep8ci.herokuapp.com/)
+
+Due to the PEP8 being down, I used Code Institute's Python Linter and errors were not reported at the time. 
+
+[PEP8CI](docs/screenshots/pep8.png)
+
 ### Testing User Stories
 
 ## Deployment
