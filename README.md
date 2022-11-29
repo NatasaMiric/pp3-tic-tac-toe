@@ -2,13 +2,13 @@
 
 Tic Tac Toe is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
-Users are playing against the computer by selecting one of the nine squares on the grid in each round. The player who gets his three marks on vertical, horizontal or diagonal row is the winner. 
+This is a fun game where the user have a chance to play against the computer and test their logical thinking.  
 
 [Live version of my project]()
 
 # How to play
 
-Tic Tac Toe is based on the classic pen and paper game that requires logical thinking. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). 
+Tic Tac Toe is a two-player game and it's based on the classic pen and paper game. You can find all details of the game here: [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). 
 
 In this version, the player is represented with the 'X' sign and the computer with 'O'.
 
@@ -112,7 +112,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
 **Exit from game**
 
-  * When the user chooses not to play again, the 'thank you' message displays and exits from the game. 
+  * When the user chooses not to play again, the 'thank you' message displays and the game exits. 
 
   ![](docs/screenshots/exit.png)
 
