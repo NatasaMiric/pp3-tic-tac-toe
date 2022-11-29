@@ -58,16 +58,24 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
   * The welcome intro clearly shows to the user what is the name of the game and prompts the user to enter the name.
    
+![](docs/screenshots/intro.png)
 
 **Displays the rules of the game**
+
   * This section gives the user clear instructions on how the game works.
   * It is valuable to the user to get to know the rules before starting the game so the user can get good results. 
 
+  ![](docs/screenshots/rules.png)
+
 **Displays the game board and prompts the user to enter the number**
+
   * In this section the player is entering his move according to his preference therefore the player can see his move on the board signed with 'X'.
   * It helps the user to know which position on the board is occupied and to follow the moves of his opponent.
+
+  ![](docs/screenshots/userinput.png)
   
  **Input validation and error-checking**
+
   The program will show the message to the user in case the wrong value is given which will guide the user to input the requested value.
   
   * You must enter you name with letters  
@@ -75,15 +83,28 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
   * You cannot enter numbers less than 1 and greater than 9
   * You cannot choose an already occupied square  
 
+![](docs/screenshots/error4.png)
+![](docs/screenshots/error1.png)
+![](docs/screenshots/error2.png)
+![](docs/screenshots/error3.png)
+
 **Play against the computer**
 
   * When the user makes his move, computer generates a random input and makes his move.
 
+![](docs/screenshots/computer.png)
+
 **Checks the outcome of the game**
+
   * The outcome of the game is checked after each player's move and it shows to the screen whether the user wins or the computer wins the game. In case nobody is a winner, the game is over and it is a tie. 
   * This section provides user with the message of who is the winner of the game. 
 
+![](docs/screenshots/winner1.png)
+![](docs/screenshots/winner2.png)
+![](docs/screenshots/tie.png)
+
 **Restarts the game**
+
   * It is prompt whether the user wants to play again. The user can choose 'yes' or 'no'. 
   If he chooses 'yes', the new board shows on the screen on which he can make new moves. In case the user chooses 'no', the program exits from the game.     
 

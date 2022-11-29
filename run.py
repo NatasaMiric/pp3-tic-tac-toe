@@ -62,7 +62,7 @@ def run_game():
         except ValueError:
             print("\nInvalid input. Please try again\n")
     display_board()
-    
+
 
 def is_board_full():
     """
