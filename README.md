@@ -150,11 +150,29 @@ Heroku - was used to deploy the app.
 [Lucid Chart](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=branded_sitelink_en_lucidchart&km_CPC_CampaignId=1490375427&km_CPC_AdGroupID=55688909257&km_CPC_Keyword=lucid%20chart&km_CPC_MatchType=e&km_CPC_ExtensionID=21193716975&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433236001&km_CPC_TargetID=kwd-55720648523&km_CPC_Country=1012212&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQiAsoycBhC6ARIsAPPbeLsu4EhgeL7oc8f5b4Q0lNfOeEAW1uvF-pLQ2OGzaXgm9ZB7HkvQCDUaAoXdEALw_wcB) - was used for creating and designing the flowchart of the project.
 
 ## Testing
+
+### Manual testing
+Feature Tested | Expected Result | Actual Result | Pass/Fail
+---------------|-----------------|--------------|--------------
+
+
+
+### Bugs
+
+Bug | Status | Fix  
+----|--------|-----
+My game did not want to check who wins | Resolved | Instead of using only set(w).issubset(set(COMPUTER_SELECTION), I added any() function to that so it could iterate through my lists and find a wining combination that matches the players selections.
+When the player chose to restart the game, the filled board from the previous round would be displayed | Resolved | I only emptied the board variable but user selection and computer selection variables had to be emptied as well.
+
+### Remaining Bugs
+
+  * No bugs remaining.
+
 ### Validator Testing
 
 * [CI Python Linter](https://pep8ci.herokuapp.com/)
 
-Due to the PEP8 being down, I used Code Institute's Python Linter and errors were not reported at the time. 
+Due to the PEP8 being down, I used Code Institute's Python Linter that confirmed that there are no errors. 
 
 [PEP8CI](docs/screenshots/pep8.png)
 
