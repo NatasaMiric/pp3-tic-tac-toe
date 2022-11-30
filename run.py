@@ -5,9 +5,9 @@ import os
 BOARD = [' ']*9
 USER_SELECTION = []
 COMPUTER_SELECTION = []
-user_win = 0
-computer_win = 0 
-tie = 0
+USER_WIN = 0
+COMPUTER_WIN = 0
+TIE = 0
 
 WIN_COMBINATIONS = [[1, 2, 3], [4, 5, 6], [7, 8, 9],
                     [1, 4, 7], [2, 5, 8], [3, 6, 9],
@@ -122,26 +122,27 @@ def generate_computer_input():
             computer_input = generate_computer_input()
     return computer_input
 
+# Solution from stackoverflow
+    # https://stackoverflow.com/questions/33203038/nested-loops-in-nested-lists
+
 
 def check_win():
     """
     Returns True if the player wins the game.
     """
-    # Solution from stackoverflow
-    # https://stackoverflow.com/questions/33203038/nested-loops-in-nested-lists
-    
-    global user_win  
-    global computer_win 
+    global USER_WIN
+    global COMPUTER_WIN
+
     if any([set(w).issubset(set(COMPUTER_SELECTION))
            for w in WIN_COMBINATIONS]):
         print("\n*** Game over ***\n")
         print("Your opponent beat you!\n")
-        computer_win += 1
+        COMPUTER_WIN += 1
         return True
     if any([set(w).issubset(set(USER_SELECTION)) for w in WIN_COMBINATIONS]):
         print("\n*** Congratulations ***\n")
         print("You are the WINNER!\n")
-        user_win += 1
+        USER_WIN += 1
         return True
     return False
 
@@ -150,10 +151,10 @@ def check_tie():
     """
     Returns True if it'a tie.
     """
-    global tie
+    global TIE
     if is_board_full() and not check_win():
         print("\nGame over!It'a tie!\n")
-        tie += 1
+        TIE += 1
         return True
     return False
 
@@ -177,7 +178,7 @@ def init():
     BOARD = [' ']*9
 
 
-def restart_game():
+def restart_game(name):
     """
     Restarts the game.
     """
@@ -191,9 +192,11 @@ def restart_game():
             run_game()
         elif user_choice == 'n':
             clear_screen()
-            print("\n")
-            print("Thank you for playing!\n")
-            print(f"Score: user: {user_win}, computer:{computer_win}, tie: {tie} ")
+            print("\t*** SCORE ***\n")
+            print(f"\t{name} : {USER_WIN}")
+            print(f"\tComputer : {COMPUTER_WIN}")
+            print(f"\tTie: {TIE}")
+            print("\nThank you for playing!\n")
             break
         else:
             print("Invalid answer. Press 'y' to start and 'n' to quit.")
@@ -247,7 +250,7 @@ def main():
     print("\nLet's play!")
     display_instructions()
     run_game()
-    restart_game()
+    restart_game(name)
 
 
 if __name__ == '__main__':
