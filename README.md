@@ -44,6 +44,8 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 ------
 ## Flowchart
 
+![](docs/images/flowchart.png)
+
 ## User Stories
 
  * As a visiting user, I would like to be able to play the game against an opponent.
