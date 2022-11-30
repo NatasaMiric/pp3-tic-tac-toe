@@ -40,17 +40,17 @@ def run_game():
         try:
             user_input = input()
             if user_input.isnumeric() is False:
-                print("\nInput must be a number between 1 and 9.\n")
+                print("\nInput must be a number between 1 and 9!\n")
                 continue
 
             user_input = int(user_input)
 
             if user_input_between_one_and_nine(user_input) is False:
-                print("\nYour input number is not between 1 and 9.\n")
+                print("\nYour input number is not between 1 and 9!\n")
                 continue
 
             if is_cell_empty(BOARD[user_input - 1]) is False:
-                print("\nThis place is already taken. Choose another spot.\n")
+                print("\nThis place is already taken. Choose another spot!\n")
                 continue
 
             BOARD[user_input - 1] = 'X'
@@ -63,7 +63,7 @@ def run_game():
                 break
             clear_screen()
         except ValueError:
-            print("\nInvalid input. Please try again\n")
+            print("\nInvalid input. Please try again!\n")
     display_board()
 
 

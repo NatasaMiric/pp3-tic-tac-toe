@@ -154,30 +154,8 @@ Heroku - was used to deploy the app.
 
 ## Testing
 
-### Manual testing
-
 Testing document can be found [here](TESTING.md)
 
-### Bugs
-
-Bug | Status | Fix  
-----|--------|-----
-My game did not want to check who wins | Resolved | Instead of using only set(w).issubset(set(COMPUTER_SELECTION), I added any() function to that so it could iterate through my lists and find a winning combination that matches the player's selections.
-When the player chose to restart the game, the filled board from the previous round would be displayed | Resolved | I only emptied the board variable but user selection and computer selection variables had to be emptied as well.
-
-### Remaining Bugs
-
-  * No bugs remaining.
-
-### Validator Testing
-
-* [CI Python Linter](https://pep8ci.herokuapp.com/)
-
-Due to the PEP8 being down, I used Code Institute's Python Linter which confirmed that there are no errors. 
-
-[PEP8CI](docs/screenshots/pep8.png)
-
-### Testing User Stories
 
 ## Deployment
 
