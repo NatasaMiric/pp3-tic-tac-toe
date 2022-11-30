@@ -184,7 +184,7 @@ def restart_game(name):
     """
     while True:
         print("\nWould you like to play again?")
-        print("\nEnter 'y' for YES or 'n' for NO:")
+        print("\nEnter 'y' for YES or 'n' for NO:\n")
         user_choice = input().strip().lower()
         if user_choice == 'y':
             clear_screen()
