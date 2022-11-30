@@ -155,10 +155,8 @@ Heroku - was used to deploy the app.
 ## Testing
 
 ### Manual testing
-Feature Tested | Expected Result | Actual Result | Pass/Fail
----------------|-----------------|--------------|--------------
 
-
+Testing document can be found [here](TESTING.md)
 
 ### Bugs
 
@@ -195,7 +193,7 @@ The game was deployed on Heroku. The following steps were used to deploy the gam
     changes.
   * Repeat the above step and select nodejs and click Save changes.
   * Next go to the Deploy tab.
-  * Under the Deployment method, choose Github and then click Connect to GitHub you will probably be prompted to sign into your GitHub.
+  * Under the Deployment method, choose GitHub and then click Connect to GitHub you will probably be prompted to sign into your GitHub.
   * Then you can search for your GitHub repository, in my case this was pp3-tic-tac-toe and click connect.
   * To deploy automatically you will need to select Enable Automatic Deploys which will rebuild the app every time you push a change to GitHub.
   * To deploy manually go to the Manual deploy section below and click Deploy Branch. Just remember you will need to do this every time you make a change to your code on Github.
