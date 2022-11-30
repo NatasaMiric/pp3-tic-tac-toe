@@ -1,4 +1,4 @@
-""" Generates random number """
+""" Python Libraries """
 import random
 import os
 import time
@@ -181,7 +181,12 @@ def init():
 
 def restart_game(name):
     """
-    Restarts the game.
+    Restarts the game and displays the final score.
+
+    Parameters:
+    -----------
+    name : string
+        Name of the user
     """
     while True:
         print("\nWould you like to play again?")
