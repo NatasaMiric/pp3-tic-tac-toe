@@ -249,7 +249,7 @@ def main():
     print(f"Welcome {name}!")
     print("\nLet's play!")
     print("\n")
-    time.sleep(2)
+    time.sleep(1.3)
     display_instructions()
     run_game()
     restart_game(name)
