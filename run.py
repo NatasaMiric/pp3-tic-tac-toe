@@ -190,8 +190,7 @@ def restart_game(name):
             clear_screen()
             init()
             run_game()
-        elif user_choice == 'n':
-            clear_screen()
+        elif user_choice == 'n':            
             print("\t*** SCORE ***\n")
             print(f"\t{name} : {USER_WIN}")
             print(f"\tComputer : {COMPUTER_WIN}")
