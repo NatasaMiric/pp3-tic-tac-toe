@@ -43,7 +43,23 @@ When the player chose to restart the game, the filled board from the previous ro
 
 Due to the PEP8 being down, I used Code Institute's Python Linter which confirmed that there are no errors. 
 
-[PEP8CI](docs/screenshots/pep8.png)
+[PEP8CI](docs/images/pep8.png)
 
 ## Testing User Stories
 
+* As a visiting user, I would like to be able to play the game against an opponent.
+    * The user is playing against the computer. After the user enters the move, the computer's choice should be displayed on the board right after that. 
+    * User and computer should take turns in entering their moves. 
+   
+    ![](docs/images/userstory1.png)
+
+* As a visiting user, I would like to be able to restart the game. 
+    * When one of the players wins the game or if it's a tie, it should be displayed the question to play again.
+    * User should enter 'y' to play again the game or 'no' to exit the game.
+
+    ![](docs/images/restart.png)
+
+* As a visiting user, I would like to be able to see the final score of the game.
+    * When the question to play again shows on the screen and if user enters no, the score should be displayed on the screen where the user can see how many times he won or lost.  
+    
+    ![](docs/images/score.png)

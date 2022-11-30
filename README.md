@@ -47,8 +47,8 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 ## User Stories
 
  * As a visiting user, I would like to be able to play the game against an opponent.
- * As a visiting user, I would like to be able to see my and the computer's choice on the board.
  * As a visiting user, I would like to be able to restart the game. 
+ * As a visiting user, I would like to be able to see the final score of the game. 
 
 ## Features
 ### Existing features
