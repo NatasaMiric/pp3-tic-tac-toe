@@ -110,9 +110,9 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
 ![](docs/images/restart.png)
 
-**Displays score and exits from game**
+**Displays score and exits**
 
-  * When the user chooses not to play again, the score displays on the screen and a 'thank you' message. 
+  * When the user chooses not to play again, the score displays on the screen and a 'thank you' message". 
   * It provides the user with information about who won most of the rounds if the player chose to play the game several times. 
 
 ![](docs/images/score.png)
@@ -181,6 +181,7 @@ The game was deployed on Heroku. The following steps were used to deploy the gam
 ## Credits
 
 * Code Institute for the deployment terminal.
+* Code Institute for the Python Linter.
 * Wikipedia for the details of the Tic-Tac-Toe game. 
 * [Stack Overflow](https://stackoverflow.com/questions/33203038/nested-loops-in-nested-lists) for finding the solution on how to check the winning condition in the game.
 * [YouTube video](https://www.youtube.com/watch?v=dK6gJw4-NCo&t=1245s) for inspiration and ideas on how to implement the game. 
