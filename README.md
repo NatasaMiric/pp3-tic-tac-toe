@@ -142,6 +142,8 @@ The following Python libraries were used:
 
   * os -  to eliminate previous code on the terminal window making it clutter-free and improving UX
 
+  * time - for delaying the next part of the game on the screen. 
+
   ### Programs
 
 GitHub- was used to store the project.
