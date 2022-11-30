@@ -1,6 +1,7 @@
 """ Generates random number """
 import random
 import os
+import time
 
 BOARD = [' ']*9
 USER_SELECTION = []
@@ -243,10 +244,12 @@ def main():
         name = input()
         if name.isalpha():
             break
-        print("Please use the letters to input your name!")
-    print("\n")
+        print("Please use the letters to input your name!") 
+    print("\n")       
     print(f"Welcome {name}!")
     print("\nLet's play!")
+    print("\n")
+    time.sleep(3)
     display_instructions()
     run_game()
     restart_game(name)
