@@ -2,13 +2,13 @@
 
 Tic Tac Toe is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
-This is a fun game where the user have a chance to play against the computer and test their logical thinking.  
+This is a fun game where the user has a chance to play against the computer and test their logical thinking.  
 
 [Live version of my project]()
 
 # How to play
 
-Tic Tac Toe is a two-player game and it's based on the classic pen and paper game. You can find all details of the game here: [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). 
+Tic Tac Toe is a two-player game and it's based on the classic pen-and-paper game. You can find all details of the game here: [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). 
 
 In this version, the player is represented with the 'X' sign and the computer with 'O'.
 
@@ -55,7 +55,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
 **Displays the welcome message and prompts the user to input the name**
 
-  * The welcome intro clearly shows to the user what is the name of the game and prompts the user to enter the name.
+  * The welcome intro clearly shows the user what is the name of the game and prompts the user to enter the name.
    
 ![](docs/images/intro.png)
 
@@ -77,7 +77,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
   The program will show the message to the user in case the wrong value is given which will guide the user to input the requested value.
   
-  * You must enter you name with letters  
+  * You must enter your name with letters  
   * You must enter the numbers
   * You cannot enter numbers less than 1 and greater than 9
   * You cannot choose an already occupied square  
@@ -89,7 +89,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
 **Play against the computer**
 
-  * When the user makes his move, computer generates a random input and makes his move.
+  * When the user makes his move, the computer generates a random input and makes his move.
   * Playing against a computer will add to the fun and make it more interesting for the user.
 
 ![](docs/images/computer.png)
@@ -97,7 +97,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 **Checks the outcome of the game**
 
   * The outcome of the game is checked after each player's move and it shows on the screen whether the user wins or the computer wins the game. In case nobody is a winner, the game is over and it is a tie. 
-  * This section provides user with the message of who is the winner of the game. 
+  * This section provides the user with the message of who is the winner of the game. 
 
 ![](docs/images/winner1.png)
 ![](docs/images/winner2.png)
@@ -112,8 +112,8 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 
 **Displays score and exits from game**
 
-  * When the user chooses not to play again, score displays on the screen and 'thank you' message. 
-  * It provides the user with the information who won most of the rounds if the player chose to play the game several times. 
+  * When the user chooses not to play again, the score displays on the screen and a 'thank you' message. 
+  * It provides the user with information about who won most of the rounds if the player chose to play the game several times. 
 
 ![](docs/images/score.png)
   
@@ -138,7 +138,7 @@ The following Python libraries were used:
 
   * random -  to randomize the choices for the computer
 
-  * os -  to eliminate previous code on the terminal window making it clutter free and to improve UX
+  * os -  to eliminate previous code on the terminal window making it clutter-free and improving UX
 
   ### Programs
 
@@ -164,7 +164,7 @@ Feature Tested | Expected Result | Actual Result | Pass/Fail
 
 Bug | Status | Fix  
 ----|--------|-----
-My game did not want to check who wins | Resolved | Instead of using only set(w).issubset(set(COMPUTER_SELECTION), I added any() function to that so it could iterate through my lists and find a wining combination that matches the players selections.
+My game did not want to check who wins | Resolved | Instead of using only set(w).issubset(set(COMPUTER_SELECTION), I added any() function to that so it could iterate through my lists and find a winning combination that matches the player's selections.
 When the player chose to restart the game, the filled board from the previous round would be displayed | Resolved | I only emptied the board variable but user selection and computer selection variables had to be emptied as well.
 
 ### Remaining Bugs
@@ -175,7 +175,7 @@ When the player chose to restart the game, the filled board from the previous ro
 
 * [CI Python Linter](https://pep8ci.herokuapp.com/)
 
-Due to the PEP8 being down, I used Code Institute's Python Linter that confirmed that there are no errors. 
+Due to the PEP8 being down, I used Code Institute's Python Linter which confirmed that there are no errors. 
 
 [PEP8CI](docs/screenshots/pep8.png)
 
@@ -195,7 +195,7 @@ The game was deployed on Heroku. The following steps were used to deploy the gam
     changes.
   * Repeat the above step and select nodejs and click Save changes.
   * Next go to the Deploy tab.
-  * Under the Deployment method choose Github and then click Connect to GitHub you will probably be prompted to sign into your GitHub.
+  * Under the Deployment method, choose Github and then click Connect to GitHub you will probably be prompted to sign into your GitHub.
   * Then you can search for your GitHub repository, in my case this was pp3-tic-tac-toe and click connect.
   * To deploy automatically you will need to select Enable Automatic Deploys which will rebuild the app every time you push a change to GitHub.
   * To deploy manually go to the Manual deploy section below and click Deploy Branch. Just remember you will need to do this every time you make a change to your code on Github.
