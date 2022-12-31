@@ -4,7 +4,7 @@ Tic Tac Toe is a Python terminal game, which runs in the Code Institute mock ter
 
 This is a fun game where the user has a chance to play against the computer and test their logical thinking.  
 
-[Live version of my project]()
+[Live version of my project](https://pp3-tictactoe.herokuapp.com/)
 
 # How to play
 
