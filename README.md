@@ -1,12 +1,10 @@
 # TIC-TAC-TOE
 
-Tic Tac Toe is a Python terminal game, which runs in the Code Institute mock terminal on Heroku and Render.
+Tic Tac Toe is a Python terminal game, which runs in the Code Institute mock terminal on Render.
 
 This is a fun game where the user has a chance to play against the computer and test their logical thinking.  
 
-[Live version of my project](https://pp3-tictactoe.herokuapp.com/)
-
-[Live version on Render] (https://pp3-tic-tac-toe.onrender.com)
+[Live version on Render](https://pp3-tic-tac-toe.onrender.com)
 
 # How to play
 
@@ -37,9 +35,7 @@ The winner is the first player who gets his three marks ('X' or 'O') on a vertic
 * [Testing](#Testing)
   * [Manual testing](#manual-testing)
   * [Validator Testing](#validator-testing) 
-  * [Testing User Stories](#testing-user-stories)
-      
- * [Deployment](#Deployment)
+  * [Testing User Stories](#testing-user-stories)     
 
 * [Credits](#Credits)
     
@@ -163,28 +159,7 @@ Heroku - was used to deploy the app.
 Testing document can be found [here](TESTING.md)
 
 
-## Deployment
-
-The game was deployed on Heroku. The following steps were used to deploy the game to Heroku:
-
-  * Sign into Heroku.
-  * On the main dashboard choose to Create new app.
-  * Choose a unique name for your project and the region, based on where you are located (as   I'm in Europe, I chose Europe), and then click on Create app.
-  * Then go to the Settings tab.
-  * In Settings click on Reveal Config Vars and enter the following key: PORT and     
-    value: 8000.    
-  * Next scroll down to Buildpacks and click Add buildpack, choose Python and then click Save 
-    changes.
-  * Repeat the above step and select nodejs and click Save changes.
-  * Next go to the Deploy tab.
-  * Under the Deployment method, choose GitHub and then click Connect to GitHub you will probably be prompted to sign into your GitHub.
-  * Then you can search for your GitHub repository, in my case this was pp3-tic-tac-toe and click connect.
-  * To deploy automatically you will need to select Enable Automatic Deploys which will rebuild the app every time you push a change to GitHub.
-  * To deploy manually go to the Manual deploy section below and click Deploy Branch. Just remember you will need to do this every time you make a change to your code on Github.
-  * Below you will see your app was successfully deployed with a view button below this that will take you to the URL of your deployed app.
-
-
-## Credits
+# Credits
 
 * Code Institute for the deployment terminal.
 * Code Institute for the Python Linter.
